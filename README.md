@@ -1,11 +1,11 @@
-<h1 align="center"> LinksPage </h1>
+<h1 align="center"> TravelGram </h1>
 
 <p align="center">
 Para aprendizado, resolvi desenvolver a página Web abaixo.
 </p>
 
 <p align="center">
-  <img alt="Página Web com meus links" src=".github/Thumnail.jpg" width="100%">
+  <img alt="Página Web com meus links" src=".github/Thumbnail.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
