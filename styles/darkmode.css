@@ -1,0 +1,46 @@
+:root{
+    --btn-img: url('../assets/icons/sun.svg');
+}
+
+#switch{
+    width: 64px;
+    position: relative;
+    margin: 4px auto;
+}
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background: white var(--btn-img) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    animation: slide-back 0.4s;
+}
+
+.light #switch button{
+    animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--surface-color);
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    border: 1px solid var(--stroke-color);
+    background-color: var(--surface-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    margin-bottom: 20px;
+}
