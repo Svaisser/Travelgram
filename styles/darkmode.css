@@ -2,6 +2,16 @@
     --btn-img: url('../assets/icons/sun.svg');
 }
 
+.dark{
+    --btn-img: url('../assets/icons/moon-stars.svg');
+    --background-color: rgb(134, 64, 56);
+    --brand-color: #EF5F4C;
+    --surface-color: rgb(80, 41, 36);
+    --shape-transparency: rgba(255, 255, 255, 0.56);
+    --text-color-primary: #ffffff;
+    --text-color-secondary: #c4c4c4;
+}
+
 #switch{
     width: 64px;
     position: relative;
@@ -12,9 +22,9 @@
     width: 32px;
     height: 32px;
     background: white var(--btn-img) no-repeat center;
-    border: 0;
     border-radius: 50%;
     cursor: pointer;
+    border: 0;
 
     position: absolute;
     z-index: 1;
@@ -25,22 +35,40 @@
     animation: slide-back 0.4s;
 }
 
-.light #switch button{
+.dark #switch button{
     animation: slide-in 0.4s forwards;
 }
 
 #switch button:hover{
-    outline: 8px solid var(--surface-color);
+    outline: 8px solid var(--skeleton-color);
 }
 
 #switch span{
     display: block;
     width: 64px;
     height: 24px;
-    border: 1px solid var(--stroke-color);
-    background-color: var(--surface-color);
+    border: 1px solid var(--surface-color);
+    background-color: var(--skeleton-color);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
     margin-bottom: 20px;
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 56%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 56%;
+    }
+    to {
+        left: 0;
+    }
 }
