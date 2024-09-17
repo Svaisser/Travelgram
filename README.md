@@ -14,8 +14,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - Git e Github
+- JavaScript
 - Figma
-
-## Próximo Passo
-
-Será implementado nessa semana ainda o DarkMode usando JS e a responsibilidade usando CSS.
