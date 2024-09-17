@@ -46,3 +46,9 @@ a:hover{
 .surface-color{
     background-color: var(--surface-color);
 }
+
+#Lupa:hover{
+    background-color: var(--skeleton-color);
+    outline: 8px solid var(--skeleton-color);
+    border-radius: 50%;
+}
