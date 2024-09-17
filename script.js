@@ -9,5 +9,4 @@ function toogleMode(){
     } 
     
     /*html.classList.toggle('dark')*/
-
 }

@@ -1,0 +1,32 @@
+@media (max-width: 700px){
+    #logo{
+        width: 64px;
+        height: 128px;
+    }
+    nav ul{
+        gap: 16px;
+    }
+
+    header{
+        padding-block: 16px;
+    }
+    #profile img{
+        width: 128px;
+        height: 128px;
+    }
+    #info{
+        width: 180px;
+    }
+
+    main img {
+        width: 180px;
+        height: 180px;
+    }
+
+    :root{
+     --text-lg: bold 24px/100% var(--font-family);
+     --text: 12px/125% var(--font-family);
+     --text-md: 10px/150% var(--font-family);
+     --text-sm: 8px/150% var(--font-family);
+    }
+ }
